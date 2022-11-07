@@ -1,0 +1,30 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(48, 33, 189);
+    padding: 0.5%;
+    color: white;
+    justify-content: space-around;
+}
+
+.items-nav {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.items-nav:hover {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: rgb(48, 33, 189);
+    transition: 0.3s;
+}
+
+.actived {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: rgb(48, 33, 189);
+}
