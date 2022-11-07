@@ -10,7 +10,7 @@ import {
   listEmployee,
   saveEmployee,
 } from "../services/employee.service";
-
+/* GET ALL EMPLOYEE */
 export const getEmployee = async (
   _req: RequestShare<IEmployee>,
   res: Response
@@ -23,7 +23,7 @@ export const getEmployee = async (
     return res.status(500).json({ errors: messagesErrors.errorServer });
   }
 };
-
+/* GET ONE EMPLOYEE */
 export const getEmployeeOne = async (
   req: RequestShare<IEmployee>,
   res: Response
@@ -39,7 +39,7 @@ export const getEmployeeOne = async (
     return res.status(500).json({ errors: messagesErrors.errorServer });
   }
 };
-
+/* POST EMPLOYEE */
 export const postEmployee = async (
   req: RequestShare<IEmployee>,
   res: Response
@@ -56,7 +56,7 @@ export const postEmployee = async (
     return res.status(500).json({ errors: messagesErrors.errorServer });
   }
 };
-
+/* PUT EMPLOYEE */
 export const putEmployee = async (
   req: RequestShare<IEmployee>,
   res: Response
@@ -73,7 +73,7 @@ export const putEmployee = async (
     return res.status(500).json({ errors: messagesErrors.errorServer });
   }
 };
-
+/* DELETE EMPLOYEE */
 export const deletEmployee = async (
   req: RequestShare<IEmployee>,
   res: Response
