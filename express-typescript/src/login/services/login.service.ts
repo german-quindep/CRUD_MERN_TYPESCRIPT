@@ -15,7 +15,7 @@ const jsonTransform = async (form: ILogin): Promise<ILogin> => {
 };
 
 const generatedToken = (users: any): string => {
-  const token = jwt.sign({ ...users }, config.tokenKey, { expiresIn: 60 * 60 });
+  const token = jwt.sign({ ...users }, config.tokenKey, { expiresIn: 60 * 60 * 60});
   return token;
 };
 
