@@ -13,7 +13,8 @@ export const getPersonIdServi = async (id_person: string) => {
 /* SAVE PERSON  */
 export const savePerson = async (personBody: IPerson) => {
   try {
-    const person = await Person.build({ ...personBody });
+    const { full_name, identity, state } = personBody;
+    const person = await Person.build({ full_name, identity, state });
     await person.save();
     return person;
   } catch (error) {

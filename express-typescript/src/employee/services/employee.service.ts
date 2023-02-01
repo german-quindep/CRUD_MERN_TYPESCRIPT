@@ -27,7 +27,13 @@ export const getIdEmployee = async (id: string) => {
 
 export const saveEmployee = async (employeBody: IEmployee) => {
   try {
-    const employe = await Employee.build({ ...employeBody });
+    const { deparment, hours_extra, id_person, salary } = employeBody;
+    const employe = await Employee.build({
+      deparment,
+      hours_extra,
+      id_person,
+      salary,
+    });
     await employe.save();
     return employe;
   } catch (error) {

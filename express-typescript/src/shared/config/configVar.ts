@@ -1,6 +1,6 @@
 export default {
   tokenKey: "APIKEYTOKENSECURITY",
-  allowedOrigins: "http://localhost:3000",
+  allowedOrigins: "http://localhost:8100",
   methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
   allowedHeaders: [
     "Origin",

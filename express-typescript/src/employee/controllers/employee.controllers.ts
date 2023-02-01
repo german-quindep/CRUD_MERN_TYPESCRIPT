@@ -34,7 +34,7 @@ export const getEmployeeOne = async (
       return res.status(400).json({ errors: errors.array() });
     const data = await getIdEmployee(req.params.id);
     if (!data) return res.status(400).json({ errors: messagesErrors.notData });
-    return res.status(200).json({ data });
+    return res.status(200).json({ data, message: "Success" });
   } catch (errors) {
     return res.status(500).json({ errors: messagesErrors.errorServer });
   }
